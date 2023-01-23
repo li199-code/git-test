@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  font-family: sans-serif;
+  border: 5px solid black;
+  width: 810px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* .flex-box {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+.left-box,
+.middle-box,
+.right-box {
+  /* flex: 0 0 240px; */
+  /* flex: 1; */
+  height: 240px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* .left-box {
+  float: left;
+  width: 240px;
+  height: 240px;
+}
+
+.middle-box {
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin-left: 40px;
+}
+
+.right-box {
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin-left: 40px;
+} */
+
+header {
+  position: relative;
+}
+
+h3 {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px 0;
+}
+
+h3::after {
+  content: "SALE";
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  background-color: red;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  top: -20px;
+  left: -35px;
+}
+
+h4 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 20px;
+  margin-top: 35px;
+  float: left;
+}
+
+.free {
+  color: #444;
+  font-size: 12px;
+  /* margin-bottom: 15px; */
+  margin-top: 40px;
+  float: right;
+}
+
+.free + p {
+  clear: both;
+  margin-top: 80px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-top: 3px solid black;
+  clear: both;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.color-box {
+  margin-top: 30px;
+}
+
+.color-box > * {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-box > div:nth-child(2) {
+  background-color: blue;
+}
+.color-box > div:nth-child(3) {
+  background-color: red;
+}
+.color-box > div:nth-child(4) {
+  background-color: rgb(209, 158, 18);
+}
+.color-box > div:nth-child(5) {
+  background-color: green;
+}
+.color-box > div:nth-child(6) {
+  background-color: rgb(98, 49, 17);
+}
